@@ -1,13 +1,17 @@
-#SERVER_NAME = '127.0.0.1:8080'
+# -*- coding: utf-8 -*-
 import os
 
 # We want to seamlessy run our API both locally and on Heroku so:
-if os.environ.get('PORT'):
-	
+if os.environ.get('PORT'):	
     SERVER_NAME = 'lprpgapi.herokuapp.com'
 else:
 	SERVER_NAME = '192.168.2.102:8080'
 
+MONGO_HOST = 'widmore.mongohq.com'
+MONGO_PORT = 10000
+MONGO_USERNAME = 'jonnyboy'
+MONGO_PASSWORD = 'ilovebeerandchips'
+MONGO_DBNAME = 'LPRPG'
 HATEOAS = False
 DEBUG = False
 PROJECTION = True
@@ -78,9 +82,3 @@ DOMAIN = {
 	'questions' : questions,
 	'tokens' : tokens,
 }
-
-MONGO_HOST = 'widmore.mongohq.com'
-MONGO_PORT = 10000
-MONGO_USERNAME = 'jonnyboy'
-MONGO_PASSWORD = 'ilovebeerandchips'
-MONGO_DBNAME = 'LPRPG'
