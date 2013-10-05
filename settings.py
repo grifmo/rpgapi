@@ -5,7 +5,7 @@ import os
 if os.environ.get('PORT'):	
     SERVER_NAME = 'lprpgapi.herokuapp.com'
 else:
-	SERVER_NAME = '192.168.2.102:8080'
+	SERVER_NAME = '127.0.0.1:5000'
 
 MONGO_HOST = 'widmore.mongohq.com'
 MONGO_PORT = 10000
