@@ -4,7 +4,7 @@ import os
 # We want to seamlessy run our API both locally and on Heroku so:
 if os.environ.get('PORT'):
 	
-    SERVER_NAME = 'eve-demo.herokuapp.com'
+    SERVER_NAME = 'lprpgapi.herokuapp.com'
 else:
 	SERVER_NAME = '192.168.2.102:8080'
 
